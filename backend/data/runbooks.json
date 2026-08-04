@@ -1,0 +1,23 @@
+[
+  {
+    "id": "RB-DB-001",
+    "title": "Database connection pool exhaustion",
+    "keywords": ["connection pool", "pool exhausted", "too many connections", "database timeout"],
+    "steps": ["Confirm active connections and pool wait time.", "Check for a recent deploy or long-running query.", "Temporarily scale database capacity or application replicas.", "Rollback the suspect deploy only after approval."],
+    "owner": "Database Platform"
+  },
+  {
+    "id": "RB-K8S-002",
+    "title": "Kubernetes crash loop response",
+    "keywords": ["crashloopbackoff", "oomkilled", "container restart", "readiness probe"],
+    "steps": ["Inspect pod events and the previous container logs.", "Check memory limits, recent configuration changes, and dependent services.", "Scale only after confirming the failure is not configuration-related."],
+    "owner": "Platform Engineering"
+  },
+  {
+    "id": "RB-UP-003",
+    "title": "Upstream dependency degradation",
+    "keywords": ["upstream", "gateway timeout", "502", "503", "rate limit"],
+    "steps": ["Check dependency status and latency dashboards.", "Enable the approved fallback or circuit breaker if available.", "Reduce non-critical traffic and notify the dependency owner."],
+    "owner": "Service Reliability"
+  }
+]
