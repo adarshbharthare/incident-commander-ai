@@ -64,6 +64,6 @@ Useful endpoints: `/docs`, `/health`, and `/api/v1/runbooks`.
 
 ## Configure an LLM (optional)
 
-Set `LLM_PROVIDER=openai` with `OPENAI_API_KEY`, or `LLM_PROVIDER=groq` with `GROQ_API_KEY`. The graph always has rule-based fallbacks, so API outages do not break the demo.
+Set `LLM_PROVIDER=openai` with `OPENAI_API_KEY`, or `LLM_PROVIDER=groq` with `GROQ_API_KEY`. 
 
 
