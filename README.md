@@ -66,6 +66,4 @@ Useful endpoints: `/docs`, `/health`, and `/api/v1/runbooks`.
 
 Set `LLM_PROVIDER=openai` with `OPENAI_API_KEY`, or `LLM_PROVIDER=groq` with `GROQ_API_KEY`. The graph always has rule-based fallbacks, so API outages do not break the demo.
 
-## Next steps
 
-Replace the local runbook retriever with ChromaDB/FAISS, add Slack and PagerDuty adapters through MCP, persist incidents, then place approval gates in front of remediation actions.
